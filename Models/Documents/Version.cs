@@ -32,12 +32,13 @@ namespace OpenLawOffice.Common.Models.Documents
     [MapMe]
     public class Version : Core
     {
-        public Guid Id { get; set; }
+        public Guid? Id { get; set; }
+        public Document Document { get; set; }
         public int VersionNumber { get; set; }
         public string Mime { get; set; }
         public string Filename { get; set; }
         public string Extension { get; set; }
-        public ulong Size { get; set; }
+        public long Size { get; set; }
         public string Md5 { get; set; }
 
         public Version()
