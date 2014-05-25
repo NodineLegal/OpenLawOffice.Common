@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-// <copyright file="Event.cs" company="Nodine Legal, LLC">
+// <copyright file="Manager.cs" company="Nodine Legal, LLC">
 // Licensed to Nodine Legal, LLC under one
 // or more contributor license agreements.  See the NOTICE file
 // distributed with this work for additional information
@@ -19,27 +19,36 @@
 // </copyright>
 // -----------------------------------------------------------------------
 
-namespace OpenLawOffice.Common.Models.Calendar
+namespace OpenLawOffice.Common.Settings
 {
     using System;
+    using System.Configuration;
 
     /// <summary>
     /// TODO: Update summary.
     /// </summary>
-    public class Event : Core
+    public class Manager : Singleton<Manager>
     {
-        public Guid? Id { get; set; }
+        private OloSection _config;
 
-        public string Title { get; set; }
+        public OloSection Configuration
+        {
+            get { return _config; }
+        }
 
-        public bool AllDay { get; set; }
+        public FileStorageSettings FileStorage
+        {
+            get { return _config.FileStorage; }
+        }
 
-        public DateTime Start { get; set; }
+        public SystemSettings System
+        {
+            get { return _config.System; }
+        }
 
-        public DateTime? End { get; set; }
-
-        public string Location { get; set; }
-
-        public string Description { get; set; }
+        public Manager()
+        {
+            _config = (OloSection)ConfigurationManager.GetSection("openLawOffice");
+        }
     }
 }

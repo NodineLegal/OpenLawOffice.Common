@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-// <copyright file="ModelWithDatesOnly.cs" company="Nodine Legal, LLC">
+// <copyright file="EventAssignedContact.cs" company="Nodine Legal, LLC">
 // Licensed to Nodine Legal, LLC under one
 // or more contributor license agreements.  See the NOTICE file
 // distributed with this work for additional information
@@ -19,16 +19,21 @@
 // </copyright>
 // -----------------------------------------------------------------------
 
-namespace OpenLawOffice.Common.Models
+namespace OpenLawOffice.Common.Models.Events
 {
     using System;
 
-    public abstract class ModelWithDatesOnly : ModelBase
+    /// <summary>
+    /// Relates an event to a task
+    /// </summary>
+    public class EventAssignedContact : Core
     {
-        public DateTime? Created { get; set; }
+        public Guid? Id { get; set; }
 
-        public DateTime? Modified { get; set; }
+        public Event Event { get; set; }
 
-        public DateTime? Disabled { get; set; }
+        public Contacts.Contact Contact { get; set; }
+
+        public string Role { get; set; }
     }
 }

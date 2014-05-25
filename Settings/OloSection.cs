@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-// <copyright file="ModelWithDatesOnly.cs" company="Nodine Legal, LLC">
+// <copyright file="OloSection.cs" company="Nodine Legal, LLC">
 // Licensed to Nodine Legal, LLC under one
 // or more contributor license agreements.  See the NOTICE file
 // distributed with this work for additional information
@@ -19,16 +19,26 @@
 // </copyright>
 // -----------------------------------------------------------------------
 
-namespace OpenLawOffice.Common.Models
+namespace OpenLawOffice.Common.Settings
 {
     using System;
+    using System.Configuration;
 
-    public abstract class ModelWithDatesOnly : ModelBase
+    /// <summary>
+    /// TODO: Update summary.
+    /// </summary>
+    public class OloSection : ConfigurationSection
     {
-        public DateTime? Created { get; set; }
+        [ConfigurationProperty("fileStorage", IsRequired = true)]
+        public FileStorageSettings FileStorage
+        {
+            get { return (FileStorageSettings)base["fileStorage"]; }
+        }
 
-        public DateTime? Modified { get; set; }
-
-        public DateTime? Disabled { get; set; }
+        [ConfigurationProperty("system", IsRequired = true)]
+        public SystemSettings System
+        {
+            get { return (SystemSettings)base["system"]; }
+        }
     }
 }

@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-// <copyright file="EventAssignedContact.cs" company="Nodine Legal, LLC">
+// <copyright file="EventResponsibleUser.cs" company="Nodine Legal, LLC">
 // Licensed to Nodine Legal, LLC under one
 // or more contributor license agreements.  See the NOTICE file
 // distributed with this work for additional information
@@ -19,21 +19,21 @@
 // </copyright>
 // -----------------------------------------------------------------------
 
-namespace OpenLawOffice.Common.Models.Calendar
+namespace OpenLawOffice.Common.Models.Events
 {
     using System;
 
     /// <summary>
-    /// Relates an event to a task
+    /// Relates a user to an event
     /// </summary>
-    public class EventAssignedContact : Core
+    public class EventResponsibleUser : Core
     {
         public Guid? Id { get; set; }
 
         public Event Event { get; set; }
 
-        public Contacts.Contact Contact { get; set; }
+        public Security.User User { get; set; }
 
-        public Tasks.AssignmentType AssignmentType { get; set; }
+        public string Responsibility { get; set; }
     }
 }
