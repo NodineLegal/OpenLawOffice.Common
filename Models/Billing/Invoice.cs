@@ -26,11 +26,12 @@ namespace OpenLawOffice.Common.Models.Billing
     public class Invoice : Core
     {
         public Guid? Id { get; set; }
-        public int BillTo { get; set; }
+        public Contacts.Contact BillTo { get; set; }
         public DateTime Date { get; set; }
         public DateTime Due { get; set; }
         public decimal Subtotal { get; set; }
         public decimal TaxAmount { get; set; }
         public decimal Total { get; set; }
+        public string ExternalInvoiceId { get; set; }
     }
 }
