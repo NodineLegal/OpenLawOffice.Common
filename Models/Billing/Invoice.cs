@@ -40,5 +40,7 @@ namespace OpenLawOffice.Common.Models.Billing
         public string BillTo_City { get; set; }
         public string BillTo_State { get; set; }
         public string BillTo_Zip { get; set; }
+        public Matters.Matter Matter { get; set; }
+        public BillingGroup BillingGroup { get; set; }
     }
 }
