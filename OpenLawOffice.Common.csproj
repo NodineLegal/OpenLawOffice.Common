@@ -99,6 +99,7 @@
     <Compile Include="Models\Forms\Form.cs" />
     <Compile Include="Models\Forms\FormField.cs" />
     <Compile Include="Models\Forms\FormFieldMatter.cs" />
+    <Compile Include="Models\Hotdocs\MatterHotdocs.cs" />
     <Compile Include="Models\MapMeAttribute.cs" />
     <Compile Include="Models\Matters\Matter.cs" />
     <Compile Include="Models\Matters\MatterContact.cs" />
