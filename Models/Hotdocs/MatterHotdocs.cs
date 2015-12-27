@@ -29,5 +29,27 @@ namespace OpenLawOffice.Common.Models.Hotdocs
         public long? Id { get; set; }
 
         public Matters.Matter Matter { get; set; }
+
+        public string AttorneyForParty { get; set; }
+
+        public string CourtType { get; set; }
+
+        public string CourtGeographicalJurisdiction { get; set; }
+
+        public string CourtSittingInCity { get; set; }
+
+        public string PlaintiffShort { get; set; }
+
+        public string PlaintiffRegular { get; set; }
+
+        public string PlaintiffLong { get; set; }
+
+        public string DefendantShort { get; set; }
+
+        public string DefendantRegular { get; set; }
+
+        public string DefendantLong { get; set; }
+
+        public string CaseNumber { get; set; }
     }
 }

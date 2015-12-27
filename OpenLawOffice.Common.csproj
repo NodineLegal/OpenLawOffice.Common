@@ -86,7 +86,6 @@
     <Compile Include="Models\Events\EventAssignedContact.cs" />
     <Compile Include="Models\Events\EventMatter.cs" />
     <Compile Include="Models\Events\EventNote.cs" />
-    <Compile Include="Models\Events\EventResponsibleUser.cs" />
     <Compile Include="Models\Contacts\Contact.cs" />
     <Compile Include="Models\Core.cs" />
     <Compile Include="Models\Documents\Document.cs" />
@@ -105,7 +104,6 @@
     <Compile Include="Models\Matters\MatterContact.cs" />
     <Compile Include="Models\Matters\MatterTag.cs" />
     <Compile Include="Models\Matters\MatterType.cs" />
-    <Compile Include="Models\Matters\ResponsibleUser.cs" />
     <Compile Include="Models\ModelBase.cs" />
     <Compile Include="Models\ModelWithDatesOnly.cs" />
     <Compile Include="Models\Notes\Note.cs" />
@@ -120,7 +118,6 @@
     <Compile Include="Models\Tasks\Task.cs" />
     <Compile Include="Models\Tasks\TaskAssignedContact.cs" />
     <Compile Include="Models\Tasks\TaskMatter.cs" />
-    <Compile Include="Models\Tasks\TaskResponsibleUser.cs" />
     <Compile Include="Models\Tasks\TaskTag.cs" />
     <Compile Include="Models\Tasks\TaskTemplate.cs" />
     <Compile Include="Models\Tasks\TaskTime.cs" />

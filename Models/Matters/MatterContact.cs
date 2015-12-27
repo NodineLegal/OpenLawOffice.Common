@@ -30,5 +30,33 @@ namespace OpenLawOffice.Common.Models.Matters
         public Contacts.Contact Contact { get; set; }
 
         public string Role { get; set; }
+
+        public bool IsClient { get; set; }
+
+        public bool IsClientContact { get; set; }
+
+        public bool IsAppointed { get; set; }
+
+        public bool IsParty { get; set; }
+
+        public string PartyTitle { get; set; }
+
+        public bool IsJudge { get; set; }
+
+        public bool IsWitness { get; set; }
+
+        public bool IsAttorney { get; set; }
+
+        public Contacts.Contact AttorneyFor { get; set; }
+
+        public bool IsLeadAttorney { get; set; }
+
+        public bool IsSupportStaff { get; set; }
+
+        public Contacts.Contact SupportStaffFor { get; set; }
+
+        public bool IsThirdPartyPayor { get; set; }
+
+        public Contacts.Contact ThirdPartyPayorFor { get; set; }
     }
 }

@@ -261,6 +261,15 @@ namespace OpenLawOffice.Common.Models.Contacts
         public string Address1AddressStreet { get; set; }
 
         /// <summary>
+        /// Gets or sets the second line of the street portion of the address.
+        /// </summary>
+        /// <value>
+        /// The street.
+        /// </value>
+        /// <author>Lucas Nodine</author>
+        public string Address1AddressLine2 { get; set; }
+
+        /// <summary>
         /// Gets or sets the city portion of the address.
         /// </summary>
         /// <value>
@@ -333,6 +342,15 @@ namespace OpenLawOffice.Common.Models.Contacts
         public string Address2AddressStreet { get; set; }
 
         /// <summary>
+        /// Gets or sets the second line of the street portion of the address.
+        /// </summary>
+        /// <value>
+        /// The street.
+        /// </value>
+        /// <author>Lucas Nodine</author>
+        public string Address2AddressLine2 { get; set; }
+
+        /// <summary>
         /// Gets or sets the city portion of the address.
         /// </summary>
         /// <value>
@@ -403,6 +421,15 @@ namespace OpenLawOffice.Common.Models.Contacts
         /// </value>
         /// <author>Lucas Nodine</author>
         public string Address3AddressStreet { get; set; }
+
+        /// <summary>
+        /// Gets or sets the second line of the street portion of the address.
+        /// </summary>
+        /// <value>
+        /// The street.
+        /// </value>
+        /// <author>Lucas Nodine</author>
+        public string Address3AddressLine2 { get; set; }
 
         /// <summary>
         /// Gets or sets the city portion of the address.
@@ -676,6 +703,15 @@ namespace OpenLawOffice.Common.Models.Contacts
         /// </value>
         /// <author>Lucas Nodine</author>
         public string Title { get; set; }
+
+        /// <summary>
+        /// Gets or sets the attorney's bar registration number
+        /// </summary>
+        /// <value>
+        /// The bar number.
+        /// </value>
+        /// <author>Lucas Nodine</author>
+        public string BarNumber { get; set; }
 
         /// <summary>
         /// Gets or sets the name of the company that employs the contact.
