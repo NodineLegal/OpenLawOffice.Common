@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-// <copyright file="Task.cs" company="Nodine Legal, LLC">
+// <copyright file="Matter.cs" company="Nodine Legal, LLC">
 // Licensed to Nodine Legal, LLC under one
 // or more contributor license agreements.  See the NOTICE file
 // distributed with this work for additional information
@@ -19,37 +19,12 @@
 // </copyright>
 // -----------------------------------------------------------------------
 
-
-namespace OpenLawOffice.Common.Models.Hotdocs
+namespace OpenLawOffice.Common.Models.Matters
 {
-    using System;
-
-    public class MatterHotdocs : Core
+    public class CourtGeographicalJurisdiction : Core
     {
-        public long? Id { get; set; }
+        public int? Id { get; set; }
 
-        public Matters.Matter Matter { get; set; }
-
-        public string AttorneyForParty { get; set; }
-
-        public string CourtType { get; set; }
-
-        public string CourtGeographicalJurisdiction { get; set; }
-
-        public string CourtSittingInCity { get; set; }
-
-        public string PlaintiffShort { get; set; }
-
-        public string PlaintiffRegular { get; set; }
-
-        public string PlaintiffLong { get; set; }
-
-        public string DefendantShort { get; set; }
-
-        public string DefendantRegular { get; set; }
-
-        public string DefendantLong { get; set; }
-
-        public string CaseNumber { get; set; }
+        public string Title { get; set; }
     }
 }

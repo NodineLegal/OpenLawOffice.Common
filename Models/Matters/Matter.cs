@@ -27,6 +27,8 @@ namespace OpenLawOffice.Common.Models.Matters
     {
         public Guid? Id { get; set; }
 
+        public long? IdInt { get; set; }
+
         public Guid? ParentId { get; set; }
 
         public MatterType MatterType { get; set; }
@@ -36,8 +38,6 @@ namespace OpenLawOffice.Common.Models.Matters
         public string Synopsis { get; set; }
 
         public bool Active { get; set; }
-
-        public string Jurisdiction { get; set; }
 
         public string CaseNumber { get; set; }
 
@@ -56,5 +56,25 @@ namespace OpenLawOffice.Common.Models.Matters
         public Billing.BillingGroup BillingGroup { get; set; }
 
         public bool OverrideMatterRateWithEmployeeRate { get; set; }
+        
+        public string AttorneyForPartyTitle { get; set; }
+        
+        public CourtType CourtType { get; set; }
+        
+        public CourtGeographicalJurisdiction CourtGeographicalJurisdiction { get; set; }
+        
+        public CourtSittingInCity CourtSittingInCity { get; set; }
+        
+        public string CaptionPlaintiffOrSubjectShort { get; set; }
+        
+        public string CaptionPlaintiffOrSubjectRegular { get; set; }
+        
+        public string CaptionPlaintiffOrSubjectLong { get; set; }
+        
+        public string CaptionOtherPartyShort { get; set; }
+        
+        public string CaptionOtherPartyRegular { get; set; }
+        
+        public string CaptionOtherPartyLong { get; set; }
     }
 }
