@@ -29,8 +29,6 @@ namespace OpenLawOffice.Common.Models.Matters
 
         public Contacts.Contact Contact { get; set; }
 
-        public string Role { get; set; }
-
         public bool IsClient { get; set; }
 
         public bool IsClientContact { get; set; }

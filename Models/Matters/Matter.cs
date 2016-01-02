@@ -41,8 +41,6 @@ namespace OpenLawOffice.Common.Models.Matters
 
         public string CaseNumber { get; set; }
 
-        public Contacts.Contact LeadAttorney { get; set; }
-
         public Contacts.Contact BillTo { get; set; }
 
         public decimal? MinimumCharge { get; set; }
