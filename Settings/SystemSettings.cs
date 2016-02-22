@@ -92,12 +92,6 @@ namespace OpenLawOffice.Common.Settings
             set { base["timezone"] = value; }
         }
 
-        [ConfigurationProperty("globalTaskTagFilters", IsDefaultCollection = false)]
-        public TagFilterCollection GlobalTaskTagFilters
-        {
-            get { return (TagFilterCollection)base["globalTaskTagFilters"]; }
-        }
-
         [ConfigurationProperty("passwordRetrievalFromEmail", IsRequired = true)]
         public string PasswordRetrievalFromEmail
         {

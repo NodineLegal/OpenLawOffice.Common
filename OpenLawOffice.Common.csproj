@@ -133,8 +133,6 @@
     <Compile Include="Settings\Manager.cs" />
     <Compile Include="Settings\OloSection.cs" />
     <Compile Include="Settings\SystemSettings.cs" />
-    <Compile Include="Settings\TagFilterCollection.cs" />
-    <Compile Include="Settings\TagFilterElement.cs" />
     <Compile Include="Singleton.cs" />
     <Compile Include="Utilities.cs" />
   </ItemGroup>
