@@ -58,6 +58,7 @@
     <Reference Include="System" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -67,11 +68,23 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Encryption.cs" />
+    <Compile Include="FileSystem\Asset.cs" />
+    <Compile Include="FileSystem\File.cs" />
     <Compile Include="FileSystem\OloFile.cs" />
     <Compile Include="FileSystem\OloMatter.cs" />
     <Compile Include="FileSystem\OloMatterDirectory.cs" />
+    <Compile Include="FileSystem\Version.cs" />
     <Compile Include="Models\Account\UserRole.cs" />
     <Compile Include="Models\Account\Users.cs" />
+    <Compile Include="Models\Assets\Asset.cs" />
+    <Compile Include="Models\Assets\AssetMatter.cs" />
+    <Compile Include="Models\Assets\AssetProgressBlock.cs" />
+    <Compile Include="Models\Assets\AssetTag.cs" />
+    <Compile Include="Models\Assets\AssetTask.cs" />
+    <Compile Include="Models\Assets\ContentType.cs" />
+    <Compile Include="Models\Assets\File.cs" />
+    <Compile Include="Models\Assets\Tag.cs" />
+    <Compile Include="Models\Assets\Version.cs" />
     <Compile Include="Models\Billing\BillingGroup.cs" />
     <Compile Include="Models\Billing\BillingRate.cs" />
     <Compile Include="Models\Billing\Expense.cs" />

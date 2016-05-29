@@ -29,6 +29,13 @@ namespace OpenLawOffice.Common.Settings
     /// </summary>
     public class FileStorageSettings : ConfigurationElement
     {
+        [ConfigurationProperty("assetsPath", IsRequired = true)]
+        public string AssetsPath
+        {
+            get { return (string)this["assetsPath"]; }
+            set { this["assetsPath"] = value; }
+        }
+
         [ConfigurationProperty("mattersPath", IsRequired = true)]
         public string MattersPath
         {
