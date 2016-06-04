@@ -3038,17 +3038,23 @@ namespace OpenLawOffice.Common.Models.Assets
 
         public static ContentType ToContentType(this string contentType)
         {
-            IEnumerable<ContentType> values = Enum.GetValues(typeof(ContentType)).Cast<ContentType>();
-            return values.SingleOrDefault(x =>
+            IEnumerable<ContentType> enumValues = Enum.GetValues(typeof(ContentType)).Cast<ContentType>();
+            List<ContentType> enumMatches = new List<ContentType>();
+            
+            foreach (var x in enumValues)
             {
                 var metadata = GetMetadata(x);
                 if (metadata != null)
                 {
                     if (((Metadata)metadata).Value == contentType)
-                        return true;
+                        enumMatches.Add(x);
                 }
-                return false;
-            });
+            };
+
+            if (enumMatches.Count < 1 || enumMatches.Count > 1)
+                return ContentType.DEFAULT;
+
+            return enumMatches[0];
         }
     }
 }
