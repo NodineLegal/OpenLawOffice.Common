@@ -36,6 +36,8 @@ namespace OpenLawOffice.Common.Models.Timing
 
         public Contacts.Contact Worker { get; set; }
 
+        public TimeCategory TimeCategory { get; set; }
+
         public string Details { get; set; }
 
         public bool Billable { get; set; }

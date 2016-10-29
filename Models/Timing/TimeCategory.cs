@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-// <copyright file="Invoice.cs" company="Nodine Legal, LLC">
+// <copyright file="TimeCategory.cs" company="Nodine Legal, LLC">
 // Licensed to Nodine Legal, LLC under one
 // or more contributor license agreements.  See the NOTICE file
 // distributed with this work for additional information
@@ -19,28 +19,17 @@
 // </copyright>
 // -----------------------------------------------------------------------
 
-namespace OpenLawOffice.Common.Models.Billing
+namespace OpenLawOffice.Common.Models.Timing
 {
     using System;
 
-    public class Invoice : Core
+    /// <summary>
+    /// TODO: Update summary.
+    /// </summary>
+    public class TimeCategory : Core
     {
-        public Guid? Id { get; set; }
-        public Contacts.Contact BillTo { get; set; }
-        public DateTime Date { get; set; }
-        public DateTime Due { get; set; }
-        public decimal Subtotal { get; set; }
-        public decimal TaxAmount { get; set; }
-        public decimal Total { get; set; }
-        public string ExternalInvoiceId { get; set; }
-        public string BillTo_NameLine1 { get; set; }
-        public string BillTo_NameLine2 { get; set; }
-        public string BillTo_AddressLine1 { get; set; }
-        public string BillTo_AddressLine2 { get; set; }
-        public string BillTo_City { get; set; }
-        public string BillTo_State { get; set; }
-        public string BillTo_Zip { get; set; }
-        public Matters.Matter Matter { get; set; }
-        public BillingGroup BillingGroup { get; set; }
+        public int? Id { get; set; }
+
+        public string Title { get; set; }
     }
 }

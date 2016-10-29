@@ -137,6 +137,7 @@
     <Compile Include="Models\Tasks\TaskTemplate.cs" />
     <Compile Include="Models\Tasks\TaskTime.cs" />
     <Compile Include="Models\Timing\Time.cs" />
+    <Compile Include="Models\Timing\TimeCategory.cs" />
     <Compile Include="Net\AuthPackage.cs" />
     <Compile Include="Net\Request.cs" />
     <Compile Include="Net\Response.cs" />
