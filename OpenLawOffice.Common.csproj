@@ -53,7 +53,6 @@
   <ItemGroup>
     <Reference Include="AutoMapper, Version=4.1.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
       <HintPath>..\OpenLawOffice.Web\packages\AutoMapper.4.1.1\lib\net45\AutoMapper.dll</HintPath>
-      <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
@@ -76,6 +75,20 @@
     <Compile Include="FileSystem\Version.cs" />
     <Compile Include="Models\Account\UserRole.cs" />
     <Compile Include="Models\Account\Users.cs" />
+    <Compile Include="Models\Activities\ActivityTask.cs" />
+    <Compile Include="Models\Activities\ActivityRegardingOpportunity.cs" />
+    <Compile Include="Models\Activities\ActivityRegardingLead.cs" />
+    <Compile Include="Models\Activities\ActivityRegardingBase.cs" />
+    <Compile Include="Models\Activities\ActivityPhonecall.cs" />
+    <Compile Include="Models\Activities\ActivityLetter.cs" />
+    <Compile Include="Models\Activities\ActivityEmail.cs" />
+    <Compile Include="Models\Activities\ActivityCorrespondenceBase.cs" />
+    <Compile Include="Models\Activities\ActivityDirection.cs" />
+    <Compile Include="Models\Activities\ActivityStatusReason.cs" />
+    <Compile Include="Models\Activities\ActivityBase.cs" />
+    <Compile Include="Models\Activities\ActivityRegardingType.cs" />
+    <Compile Include="Models\Activities\ActivityType.cs" />
+    <Compile Include="Models\Activities\ActivityPriority.cs" />
     <Compile Include="Models\Assets\Asset.cs" />
     <Compile Include="Models\Assets\AssetMatter.cs" />
     <Compile Include="Models\Assets\AssetProgressBlock.cs" />
@@ -111,6 +124,12 @@
     <Compile Include="Models\Forms\Form.cs" />
     <Compile Include="Models\Forms\FormField.cs" />
     <Compile Include="Models\Forms\FormFieldMatter.cs" />
+    <Compile Include="Models\Leads\Lead.cs" />
+    <Compile Include="Models\Leads\LeadBySource.cs" />
+    <Compile Include="Models\Leads\LeadFee.cs" />
+    <Compile Include="Models\Leads\LeadSource.cs" />
+    <Compile Include="Models\Leads\LeadSourceType.cs" />
+    <Compile Include="Models\Leads\LeadStatus.cs" />
     <Compile Include="Models\MapMeAttribute.cs" />
     <Compile Include="Models\Matters\CourtGeographicalJurisdiction.cs" />
     <Compile Include="Models\Matters\CourtSittingInCity.cs" />
@@ -125,6 +144,11 @@
     <Compile Include="Models\Notes\NoteMatter.cs" />
     <Compile Include="Models\Notes\NoteNotification.cs" />
     <Compile Include="Models\Notes\NoteTask.cs" />
+    <Compile Include="Models\Opportunities\OpportunityBySource.cs" />
+    <Compile Include="Models\Opportunities\Opportunity.cs" />
+    <Compile Include="Models\Opportunities\OpportunityContact.cs" />
+    <Compile Include="Models\Opportunities\OpportunityMonthCount.cs" />
+    <Compile Include="Models\Opportunities\OpportunityStage.cs" />
     <Compile Include="Models\PermissionType.cs" />
     <Compile Include="Models\Settings\TagFilter.cs" />
     <Compile Include="Models\Tagging\TagBase.cs" />
@@ -176,10 +200,10 @@
     <Resource Include="LICENSE.txt" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <Content Include=".gitignore" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include=".gitignore" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
